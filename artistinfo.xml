@@ -1,0 +1,57 @@
+<ArtistsInfo>
+   <artist>
+      <name>Marcus Sterling</name>
+      <age>21</age>
+      <location>Indianapolis</location>
+      <genre>hip-hop</genre>
+      <hometown>Indianapolis</hometown>
+      <description>Marcus Sterling is someone with a laid back personality and always likes to make sure everyone is having a good time. His music is a reflection of his personality but also some of his emotions.</description>
+   </artist>
+
+   <artist>
+      <name>Tazzy</name>
+      <age>19</age>
+      <location>Indianapolis</location>
+      <genre>hip-hop/rap</genre>
+      <hometown>North Carolina</hometown>
+      <description>N/A</description>
+   </artist>
+
+   <artist>
+      <name>Xae</name>
+      <age>17</age>
+      <location>Indianapolis</location>
+      <genre>hip-hop/rap</genre>
+      <hometown>Indianapolis</hometown>
+      <description>N/A</description>
+   </artist>
+
+   <artist>
+      <name>C.R.</name>
+      <age>20</age>
+      <locaton>Los Angeles</locaton>
+      <genre>hip-hop/rap</genre>
+      <hometown>Indianapolis</hometown>
+      <description>C.R. is a guy who is known for being someone who has good vibes and likes to make music that speaks about his loyalty for friends and family.</description>
+   </artist>
+
+   <artist>
+      <name>WTN E</name>
+      <age>20</age>
+      <location>Indianapolis</location>
+      <genre>rap</genre>
+      <hometown>Indianapolis</hometown>
+      <description>Indianapolis, WTN E is a high energy guy. His music also reflects his personality as he makes a lot of music that can get you hyped up.</description>
+   </artist>
+
+   <artist>
+      <name>317 Boys</name>
+      <age>N/A</age>
+      <location>Indianapolis</location>
+      <genre>hip-hop/rap</genre>
+      <hometown>Indianapolis</hometown>
+      <description>317 Boys are upcoming rappers coming straight out their room, literally.</description>
+   </artist>
+
+
+</ArtistsInfo>
