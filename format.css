@@ -1,5 +1,5 @@
 html {
-	background-color: white;
+	background-image: url("purplegradient.jpg");
 }
 body {
 	width: 92%;
@@ -45,6 +45,7 @@ p{
 	margin-top: 30px;
 	margin-bottom: 20px;
 	position: relative;
+	border: 5px solid #000080;
 }
 .rightCol {
 	background: grey;
@@ -55,6 +56,7 @@ p{
 	margin-top: 30px;
 	margin-bottom: 20px;
 	position: relative;
+	border: 5px solid #000080;
 
 }
 .centerCol{
@@ -65,4 +67,5 @@ p{
 	width: 96%;
 	position: relative;
 	top: 5px;
+	border: 5px solid #000080;
 }
