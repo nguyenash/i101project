@@ -9,6 +9,13 @@
 	  type = "text/css"
 	  href = "format.css"/> 
 </head>
+	
+<script type="text/Javascript">
+function sendMessage() {
+	window.alert(document.getElementById("commentbox").value);
+	userName = document.forms[0].name.value;
+	userEmail = document.forms[0].email.value;
+</script>
 
 <body>
 	<header>
@@ -62,11 +69,5 @@
 	<br>
 	<footer align="center"> INFO I101 Final Project 2018 <br> Made by Brandon Aarons, Ashley Nguyen, Mason Noble, & Ashante'-Nile Sumrall <br> <img src = "shoot.gif" height = "75" width = "125"> </footer>
 
-<script type="text/Javascript">
-function sendMessage() {
-	window.alert(document.getElementById("commentbox").value);
-	userName = document.forms[0].name.value;
-	userEmail = document.forms[0].email.value;
-</script>
 </body>
 </html>
