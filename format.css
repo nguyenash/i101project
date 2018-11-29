@@ -60,7 +60,7 @@ footer{
 }
 
 .leftCol {
-	background: #A9A9A9;
+	background-image: url("stars.jpg");
 	height: 350px;
 	float: left;
 	padding: 20px;
@@ -71,7 +71,7 @@ footer{
 	border: 5px solid #000080;
 }
 .rightCol {
-	background: #A9A9A9;
+	background-image: url("stars.jpg");
 	height: 350px;
 	float: right;
 	padding: 20px;
@@ -83,7 +83,7 @@ footer{
 
 }
 .centerCol{
-	background: #A9A9A9;
+	background-image: url("stars.jpg");
 	height: 300px;
 	padding: 20px;
 	margin-bottom: 15px;
