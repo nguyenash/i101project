@@ -49,14 +49,39 @@
 	</div>
 	
 	<div class = "leftCol" align = "center">
-		<img height = "300" width = "250" src = "XaeWay.jpg" align = "left">
-		<header><h2> Featured Artist </h2></header>
-		<iframe align = "right" width = "250" src = "artistinfo.xml"></iframe>
+		<img height = "275" width = "225" src = "XaeWay.jpg" align = "left">
+		<header><h2> Featured Artist </h2></header><br>
+		<iframe align = "right" height = "210" width = "265" src = "artistinfo.xml"></iframe>
+		<audio controls class="player"><source src="Xae Way- Racks (Official Music Video).mp3" type="audio/mpeg"></audio>
 	</div>
 	
 	<div class = "rightCol">
-		<!-- space reserved for comment section-->
+		<form>
+			<header><h2>
+				What is your favorite music genre?
+			</h2></header><br>
+			<p>
+				<input type = "radio" name = "genre" value = "hip-hop">Hip-hop <br><br>
+				<input type = "radio" name = "genre" value = "rap">Rap <br><br>
+				<input type = "radio" name = "genre" value = "r&b">R&B <br><br>
+				<input type = "radio" name = "genre" value = "other">Other<br><br>
+				<button id="myButton" onclick = "submitpoll()"> Submit </button>
+			<p>
+			<div id = "output"> </div>
+		</form>
 	</div>
+
+<!-- UNDER CONSTRUCTION -->
+<script>
+function submitpoll(){
+	var submission = "";
+	var musicgenre = document.querySelector('input[name = "genre"]:checked').value;
+	var submission += "Thanks for answering! You have selected " + musicgenre + " as your favorite music genre!");
+	var output = document.getElementById("output");
+	alert(ouput.innerHTML);
+	output.innerHTML = submission;
+}
+</script>
 	
 	<br>
 	<footer align="center"> INFO I101 Final Project 2018 <br> Made by Brandon Aarons, Ashley Nguyen, Mason Noble, & Ashante'-Nile Sumrall <br> <img src = "shoot.gif" height = "75" width = "125"> </footer>
