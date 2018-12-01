@@ -14,9 +14,41 @@
 	<!-- fix this -->
 	<!-- <audio src="" controls> -->
 	
-	<audio controls>
-		<source src="" type="audio/mpeg">
-	</audio>
+	<script type="text/javascript">
+	
+	var songs = ["petco.mp3","money-orders-lazerbeam-ft.mp3", "here-we-come-prod-goody-beats.mp3","crslide-fbg-duck-remix.mp3","Xae Way- Racks (Official Music Video).mp3","Taz Focal HER (Prod. By KingLee Boy) Official Audio.mp3"]
+
+	function SelectedSong(){
+		var x = document.getElementById("selectsong").value;
+		//alert(songs[x-1]);
+		var xpath = "musicfiles/" + songs[x-1];
+		PlayMusic(xpath);
+		//Notes --- Need to lookup the song path by id value
+
+		//PlayMusic(xpath);
+	}
+
+	function PlayMusic(songfile){
+		//alert(songfile);
+		document.getElementById("audioplayer").src=songfile;
+		document.getElementById("audioplayer").play();
+		//alert(document.getElementById("audioplayer").src);
+	}
+</script>
+
+<select id="selectsong" onchange="SelectedSong()"; return false;>
+	<option default value=0>Please Select a Song...</option>
+	<option value=1>Song 1</option>
+	<option value=2>Song 2</option>
+	<option value=3>Song 3</option>
+	<option value=4>Song 4</option>
+	<option value=5>Song 5</option>
+	<option value=6>Song 6</option>
+</select>
+
+<audio controls id="audioplayer">
+	<source src="" type="audio/mpeg">
+</audio>
 	<!-- insert .mp3 link within quotes -->
 	
 	<header>
