@@ -34,6 +34,41 @@
 		document.getElementById("audioplayer").play();
 		//alert(document.getElementById("audioplayer").src);
 	}
+
+	/*
+	function submitpoll(){
+		var submission = "";
+		var musicgenre = document.querySelector('input[name = "genre"]:checked').value;
+		var submission += "Thanks for answering! You have selected " + musicgenre + " as your favorite music genre!";
+		var output = document.getElementById("output");
+		alert(ouput.innerHTML);
+		output.innerHTML = submission;
+	}
+	*/
+
+	function SubPoll(){
+		var musicgenre ="";
+		var selerr = 0; 
+		//alert(document.getElementById("idRadio-HH").checked);
+		if(document.getElementById("idRadio-HH").checked){
+			musicgenre = "Hip Hop";
+		} else if(document.getElementById("idRadio-RAP").checked){
+			musicgenre = "Rap";
+		}else if(document.getElementById("idRadio-RB").checked){
+			musicgenre = "R&B";
+		}else if(document.getElementById("idRadio-Other").checked){
+			musicgenre = "Other";
+		}else{
+			selerr = 1;
+			 alert("Nothing was selected!!!");
+		}
+		if(selerr < 1){
+			alert("Thanks for answering! You have selected " + musicgenre + " as your favorite music genre!");
+		} 
+		
+
+	}
+
 </script>
 
 <select id="selectsong" onchange="SelectedSong()"; return false;>
@@ -88,32 +123,20 @@
 	</div>
 	
 	<div class = "rightCol">
-		<form>
+		
 			<header><h2>
 				What is your favorite music genre?
 			</h2></header><br>
 			<p>
-				<input type = "radio" name = "genre" value = "hip-hop">Hip-hop <br><br>
-				<input type = "radio" name = "genre" value = "rap">Rap <br><br>
-				<input type = "radio" name = "genre" value = "r&b">R&B <br><br>
-				<input type = "radio" name = "genre" value = "other">Other<br><br>
-				<button id="myButton" onclick = "submitpoll()"> Submit </button>
+				<input type = "radio" name = "genre" id="idRadio-HH" value = "hip-hop">Hip-hop<br><br>
+				<input type = "radio" name = "genre" id="idRadio-RAP" value = "rap">Rap <br><br>
+				<input type = "radio" name = "genre" id="idRadio-RB" value = "r&b">R&B <br><br>
+				<input type = "radio" name = "genre" id="idRadio-Other" value = "other">Other<br><br>
+				<button id="myButton" onclick="SubPoll()">Submit</button>
 			<p>
 			<div id = "output"> </div>
-		</form>
+		
 	</div>
-
-<!-- UNDER CONSTRUCTION -->
-<script>
-function submitpoll(){
-	var submission = "";
-	var musicgenre = document.querySelector('input[name = "genre"]:checked').value;
-	var submission += "Thanks for answering! You have selected " + musicgenre + " as your favorite music genre!");
-	var output = document.getElementById("output");
-	alert(ouput.innerHTML);
-	output.innerHTML = submission;
-}
-</script>
 	
 	<br>
 	<footer align="center"> INFO I101 Final Project 2018 <br> Made by Brandon Aarons, Ashley Nguyen, Mason Noble, & Ashante'-Nile Sumrall <br> <img src = "shoot.gif" height = "75" width = "125"> </footer>
