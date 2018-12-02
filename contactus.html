@@ -13,9 +13,19 @@
 <!-- UNDER CONSTRUCTION -->
 <script type="text/Javascript">
 function sendMessage() {
-	window.alert(document.getElementById("commentbox").value);
-	userName = document.forms[0].name.value;
-	userEmail = document.forms[0].email.value;
+	//window.alert(document.getElementById("commentbox").value);
+	//userName = document.forms[0].name.value;
+	//userEmail = document.forms[0].email.value;
+	var form_name = document.getElementById("name").value;
+	var form_email = document.getElementById("email").value;
+	var form_commentbox = document.getElementById("commentbox").value;
+	
+	alert("Thanks " + form_name + " your comment " + form_commentbox + " has been submitted and a survey has been sent to " + form_email);
+	
+	document.getElementById("name").value = "";
+	document.getElementById("email").value = "";
+	document.getElementById("commentbox").value = "";
+}
 </script>
 
 <body>
@@ -44,7 +54,6 @@ function sendMessage() {
 		<header><h2> Send us a message! </h2></header>
 		<br>
 		
-		<form method="post" action="">
 		
 		<label for="name">Name:</label>
 		<input type="text" name="name" id="name"> 
@@ -55,10 +64,8 @@ function sendMessage() {
 		<br><br>
 		
 		<div id = "CommentButton">
-			<form id = "jsform">
 				Comments:<br>
 				<textarea id="commentbox" rows="5" cols="149"></textarea>
-			</form>
 			<div align = "center">
 				<br>
 				<button id = "myButton" onClick="sendMessage();">Submit</button>
