@@ -11,8 +11,6 @@
 </head>
 
 <body>
-	<!-- fix this -->
-	<!-- <audio src="" controls> -->
 	
 <script type="text/javascript">
 	
@@ -35,17 +33,6 @@
 		//alert(document.getElementById("audioplayer").src);
 	}
 
-	/*
-	function submitpoll(){
-		var submission = "";
-		var musicgenre = document.querySelector('input[name = "genre"]:checked').value;
-		var submission += "Thanks for answering! You have selected " + musicgenre + " as your favorite music genre!";
-		var output = document.getElementById("output");
-		alert(ouput.innerHTML);
-		output.innerHTML = submission;
-	}
-	*/
-
 	function SubPoll(){
 		var musicgenre ="";
 		var selerr = 0; 
@@ -65,12 +52,27 @@
 		if(selerr < 1){
 			alert("Thanks for answering! You have selected " + musicgenre + " as your favorite music genre!");
 		} 
+	}
+	
+	function artist2(){
+		var dataSource = document.getElementById("artistInfo");
+		var artist = dataSource.getElementsByTagName("artist")[0];
 		
-
+		var name = "<b>Name:</b> " + artist.getElementsByTagName("name")[0].firstChild.data;
+		var age = "<b>Age:</b> " + artist.getElementsByTagName("age")[0].firstChild.data;
+		var location = "<b>Location:</b> " + artist.getElementsByTagName("location")[0].firstChild.data;
+		var genre = "<b>Genre:</b> " + artist.getElementsByTagName("genre")[0].firstChild.data;
+		var hometown = "<b>Hometown:</b> " + artist.getElementsByTagName("hometown")[0].firstChild.data;
+		var description = "<b>Description:</b> " + artist.getElementsByTagName("description")[0].firstChild.data;
+		var socialmedia = "<b>Social Media:</b> " + artist.getElementsByTagName("socialmedia")[0].firstChild.data;
+		
+		document.getElementById("printA2").innerHTML = name + " " + age + " " + location + "<br>" + genre + " " + hometown + "<br>" + description + "<br>" + socialmedia;
 	}
 
 </script>
 
+<br>
+<div align = "center">
 <select id="selectsong" onchange="SelectedSong()"; return false;>
 	<option default value=0>Please Select a Song...</option>
 	<option value=1>Song 1</option>
@@ -80,12 +82,12 @@
 	<option value=5>Song 5</option>
 	<option value=6>Song 6</option>
 </select>
-
+<br><br>
 <audio controls id="audioplayer">
 	<source src="" type="audio/mpeg">
 </audio>
 	<!-- insert .mp3 link within quotes -->
-	
+</div>
 	<header>
 		<h1>Sleepy Indy <img src = "sleeping.gif" height = "50" width = "65"> </h1>
 	</header>
@@ -118,7 +120,10 @@
 	<div class = "leftCol" align = "center">
 		<img height = "275" width = "225" src = "XaeWay.jpg" align = "left">
 		<header><h2> Featured Artist </h2></header><br>
-		<iframe align = "right" height = "210" width = "265" src = "artistinfo.xml"></iframe>
+		<div align = "center">
+			<a href = "javascript:artist2()">Show Info</a> <br>
+			<p1 id="printA2" onload="artist2()"></p1> <br>
+		</div>
 		<audio controls class="player"><source src="Xae Way- Racks (Official Music Video).mp3" type="audio/mpeg"></audio>
 	</div>
 	
@@ -140,6 +145,22 @@
 	
 	<br>
 	<footer align="center"> INFO I101 Final Project 2018 <br> Made by Brandon Aarons, Ashley Nguyen, Mason Noble, & Ashante'-Nile Sumrall <br> <img src = "shoot.gif" height = "75" width = "125"> </footer>
+	
+	<xml id="artistInfo" style="display: none;">
+	<ArtistsInfo>
+	   <artist>
+		  <id>2</id>
+		  <name>Tazzy</name>
+		  <age>19</age>
+		  <location>Indianapolis</location>
+		  <genre>hip-hop/rap</genre>
+		  <hometown>North Carolina</hometown>
+		  <description>Taylor, also known as Tazzy, or Taz Focal is an upcoming rapper and singer that discusses the reality of what the life of extremity brings to him.</description>
+		  <socialmedia>N/A</socialmedia>
+		  <music>https://www.youtube.com/watch?v=ow9pNWv0PHk</music>
+	   </artist>
+	</ArtistsInfo>
+	</xml>
 
 </body>
 

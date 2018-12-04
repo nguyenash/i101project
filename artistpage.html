@@ -8,9 +8,101 @@
 	<link rel = "stylesheet"
 	  type = "text/css"
 	  href = "format.css"/> 
+	  
+	 <script type="text/javascript">
+		function artist1(){
+			var dataSource = document.getElementById("artistInfo");
+			var artist = dataSource.getElementsByTagName("artist")[0];
+			
+			var name = "<b>Name:</b> " + artist.getElementsByTagName("name")[0].firstChild.data;
+			var age = "<b>Age:</b> " + artist.getElementsByTagName("age")[0].firstChild.data;
+			var location = "<b>Location:</b> " + artist.getElementsByTagName("location")[0].firstChild.data;
+			var genre = "<b>Genre:</b> " + artist.getElementsByTagName("genre")[0].firstChild.data;
+			var hometown = "<b>Hometown:</b> " + artist.getElementsByTagName("hometown")[0].firstChild.data;
+			var description = "<b>Description:</b> " + artist.getElementsByTagName("description")[0].firstChild.data;
+			var socialmedia = "<b>Social Media:</b> " + artist.getElementsByTagName("socialmedia")[0].firstChild.data;
+			
+			document.getElementById("printA1").innerHTML = name + " " + age + " " + location + "<br>" + genre + " " + hometown + "<br>" + description + "<br>" + socialmedia;
+		}
+		
+		function artist2(){
+			var dataSource = document.getElementById("artistInfo");
+			var artist = dataSource.getElementsByTagName("artist")[1];
+			
+			var name = "<b>Name:</b> " + artist.getElementsByTagName("name")[0].firstChild.data;
+			var age = "<b>Age:</b> " + artist.getElementsByTagName("age")[0].firstChild.data;
+			var location = "<b>Location:</b> " + artist.getElementsByTagName("location")[0].firstChild.data;
+			var genre = "<b>Genre:</b> " + artist.getElementsByTagName("genre")[0].firstChild.data;
+			var hometown = "<b>Hometown:</b> " + artist.getElementsByTagName("hometown")[0].firstChild.data;
+			var description = "<b>Description:</b> " + artist.getElementsByTagName("description")[0].firstChild.data;
+			var socialmedia = "<b>Social Media:</b> " + artist.getElementsByTagName("socialmedia")[0].firstChild.data;
+			
+			document.getElementById("printA2").innerHTML = name + " " + age + " " + location + "<br>" + genre + " " + hometown + "<br>" + description + "<br>" + socialmedia;
+		}
+		
+		function artist3(){
+			var dataSource = document.getElementById("artistInfo");
+			var artist = dataSource.getElementsByTagName("artist")[2];
+			
+			var name = "<b>Name:</b> " + artist.getElementsByTagName("name")[0].firstChild.data;
+			var age = "<b>Age:</b> " + artist.getElementsByTagName("age")[0].firstChild.data;
+			var location = "<b>Location:</b> " + artist.getElementsByTagName("location")[0].firstChild.data;
+			var genre = "<b>Genre:</b> " + artist.getElementsByTagName("genre")[0].firstChild.data;
+			var hometown = "<b>Hometown:</b> " + artist.getElementsByTagName("hometown")[0].firstChild.data;
+			var description = "<b>Description:</b> " + artist.getElementsByTagName("description")[0].firstChild.data;
+			var socialmedia = "<b>Social Media:</b> " + artist.getElementsByTagName("socialmedia")[0].firstChild.data;
+			
+			document.getElementById("printA3").innerHTML = name + " " + age + " " + location + "<br>" + genre + " " + hometown + "<br>" + description + "<br>" + socialmedia;
+		}
+		
+		function artist4(){
+			var dataSource = document.getElementById("artistInfo");
+			var artist = dataSource.getElementsByTagName("artist")[3];
+			
+			var name = "<b>Name:</b> " + artist.getElementsByTagName("name")[0].firstChild.data;
+			var age = "<b>Age:</b> " + artist.getElementsByTagName("age")[0].firstChild.data;
+			var location = "<b>Location:</b> " + artist.getElementsByTagName("location")[0].firstChild.data;
+			var genre = "<b>Genre:</b> " + artist.getElementsByTagName("genre")[0].firstChild.data;
+			var hometown = "<b>Hometown:</b> " + artist.getElementsByTagName("hometown")[0].firstChild.data;
+			var description = "<b>Description:</b> " + artist.getElementsByTagName("description")[0].firstChild.data;
+			var socialmedia = "<b>Social Media:</b> " + artist.getElementsByTagName("socialmedia")[0].firstChild.data;
+			
+			document.getElementById("printA4").innerHTML = name + " " + age + " " + location + "<br>" + genre + " " + hometown + "<br>" + description + "<br>" + socialmedia;
+		}
+		
+		function artist5(){
+			var dataSource = document.getElementById("artistInfo");
+			var artist = dataSource.getElementsByTagName("artist")[4];
+			
+			var name = "<b>Name:</b> " + artist.getElementsByTagName("name")[0].firstChild.data;
+			var age = "<b>Age:</b> " + artist.getElementsByTagName("age")[0].firstChild.data;
+			var location = "<b>Location:</b> " + artist.getElementsByTagName("location")[0].firstChild.data;
+			var genre = "<b>Genre:</b> " + artist.getElementsByTagName("genre")[0].firstChild.data;
+			var hometown = "<b>Hometown:</b> " + artist.getElementsByTagName("hometown")[0].firstChild.data;
+			var description = "<b>Description:</b> " + artist.getElementsByTagName("description")[0].firstChild.data;
+			var socialmedia = "<b>Social Media:</b> " + artist.getElementsByTagName("socialmedia")[0].firstChild.data;
+			
+			document.getElementById("printA5").innerHTML = name + " " + age + " " + location + "<br>" + genre + " " + hometown + "<br>" + description + "<br>" + socialmedia;
+		}
+		
+		function artist6(){
+			var dataSource = document.getElementById("artistInfo");
+			var artist = dataSource.getElementsByTagName("artist")[5];
+			
+			var name = "<b>Name:</b> " + artist.getElementsByTagName("name")[0].firstChild.data;
+			var age = "<b>Age:</b> " + artist.getElementsByTagName("age")[0].firstChild.data;
+			var location = "<b>Location:</b> " + artist.getElementsByTagName("location")[0].firstChild.data;
+			var genre = "<b>Genre:</b> " + artist.getElementsByTagName("genre")[0].firstChild.data;
+			var hometown = "<b>Hometown:</b> " + artist.getElementsByTagName("hometown")[0].firstChild.data;
+			var description = "<b>Description:</b> " + artist.getElementsByTagName("description")[0].firstChild.data;
+			var socialmedia = "<b>Social Media:</b> " + artist.getElementsByTagName("socialmedia")[0].firstChild.data;
+			
+			document.getElementById("printA6").innerHTML = name + " " + age + " " + location + "<br>" + genre + " " + hometown + "<br>" + description + "<br>" + socialmedia;
+		}
+	 
+	 </script>
 </head>
 
-<body onload = "displayArtistInfo">
 	<header>
 		<h1>Sleepy Indy <img src = "sleeping.gif" height = "50" width = "65"> </h1>
 	</header>
@@ -32,82 +124,147 @@
 		<h3>Check out these local artists!</h3>
 	</header>
 	
+	<div align = "center">
+		<p>Click "Show Info" to learn more about a music artist.</p>
+	</div>
+	
+	<br>
+	
 	<!-- Marcus Sterling -->
 	<div class = "leftCol" align = "center">
 		<img height = "130" width = "230" src = "MarcusSterling.png" align = "center"> <br><br>
-		<div id = "artistInfo"> </div>
-		<!-- <iframe align = "center" class = "artistDescripHorizontal" src = "artistinfo.xml"></iframe> --> <br><br>
+		<a href = "javascript:artist1()">Show Info</a> <br>
+		<p1 id="printA1" onload="artist1()"></p1> <br>
 		<audio controls><source src="here-we-come-prod-goody-beats.mp3" type="audio/mpeg"></audio>
 	</div>
 	
 	<!-- Xae Way -->
 	<div class = "rightCol" align = "right">
 		<img height = "265" width = "215" src = "XaeWay.jpg" align = "left">
-		<iframe align = "right" class = "artistDescripVertical" src = "artistinfo.xml"></iframe>
+		<div align = "center">
+			<a href = "javascript:artist2()">Show Info</a> <br>
+			<p1 id="printA2" onload="artist2()"></p1> <br>
+		</div>
 		<audio controls class="player"><source src="Xae Way- Racks (Official Music Video).mp3" type="audio/mpeg"></audio>
 	</div>
 	
 	<!-- Tazzy -->
 	<div class = "leftCol" align = "right">
 		<img height = "315" width = "215" src = "Tazzy.jpg" align = "left">
-		<iframe align = "right" class = "artistDescripVertical" src = "artistinfo.xml"></iframe>
+		<div align = "center">
+			<a href = "javascript:artist3()">Show Info</a> <br>
+			<p1 id="printA3" onload="artist3()"></p1> <br>
+		</div>
 		<audio controls class = "player"><source src="Taz Focal HER (Prod. By KingLee Boy) Official Audio.mp3" type="audio/mpeg" class = "player"></audio>
 	</div>
 	
 	<!-- C.R. -->
 	<div class = "rightCol" align = "center">
-		<img height = "150" width = "275" src = "C.R..png" align = "center"> <br><br>
-		<iframe align = "center" class = "artistDescripHorizontal" src = "artistinfo.xml"></iframe> <br><br>
+		<img height = "150" width = "275" src = "C.R..png" align = "center">
+		<div align = "center">
+			<a href = "javascript:artist4()">Show Info</a> <br>
+			<p1 id="printA4" onload="artist4()"></p1> <br>
+		</div>
 		<audio controls><source src="crslide-fbg-duck-remix.mp3" type="audio/mpeg"></audio>
 	</div>
 	
 	<!-- WTN E -->
 	<div class = "leftCol" align = "center">
 		<img height = "140" width = "160" src = "WTN E.png" align = "center"> <br><br>
-		<iframe align = "center" class = "artistDescripHorizontal" src = "artistinfo.xml"></iframe> <br><br>
+		<div align = "center">
+			<a href = "javascript:artist5()">Show Info</a> <br>
+			<p1 id="printA5" onload="artist5()"></p1> <br>
+		</div>
 		<audio controls><source src="petco.mp3" type="audio/mpeg"></audio>
 	</div>
 	
 	<!-- 317 Boys -->
 	<div class = "rightCol" align = "center">
 		<img height = "350" width = "200" src = "317boys.png" align = "left">
-		<iframe align = "right" class = "artistDescripVertical" src = "artistinfo.xml"></iframe>
+		<div align = "center">
+			<a href = "javascript:artist6()">Show Info</a> <br>
+			<p1 id="printA6" onload="artist6()"></p1> <br>
+		</div>
 		<audio controls class = "player" ><source src="money-orders-lazerbeam-ft.mp3 " type="audio/mpeg"></audio>
 	</div>
-	
-<!-- UNDER CONSTRUCTION -->
-<script type="text/Javascript">
-if (window.XMLHttpRequest)
-{// code for IE7+, Firefox, Chrome, Opera, Safari
-   xmlhttp=new XMLHttpRequest();
-}
-else
-{// code for IE6, IE5
-   xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-}
-xmlhttp.open("GET", "artistinfo.xml", false);
-xmlhttp.send();
-xmlDoc = xmlhttp.responseXML;
-	
-var x = xmlDoc.getElementsByTagName("Artist");
-i = 0;
-function displayArtistInfo(){
-	name = x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue;
-	age = x[i].getElementsByTagName("Age")[0].childNodes[0].nodeValue;
-	txt = "Name: " + name + "<br>Age " + age;
-	document.getElementById("artistInfo").innerHTML = txt;
-}
-
-function artist1(){
-	i = 0;
-	displayArtistInfo();
-}
-
-/* YOUTUBE VID LINK: https://www.youtube.com/watch?v=WhKRbo8MANA W3SCHOOLS REFERENCE: https://www.w3schools.com/xml/xml_dom.asp */
-</script>
 
 	<footer align="center"> INFO I101 Final Project 2018 <br> Made by Brandon Aarons, Ashley Nguyen, Mason Noble, & Ashante'-Nile Sumrall <br> <img src = "shoot.gif" height = "75" width = "125"> </footer>
+	
+	<xml id="artistInfo" style="display: none;">
+	<ArtistsInfo>
+	   <artist>
+		  <id>1</id>
+		  <name>Marcus Sterling</name>
+		  <age>21</age>
+		  <location>Indianapolis</location>
+		  <genre>hip-hop</genre>
+		  <hometown>Indianapolis</hometown>
+		  <description>Marcus Sterling is someone with a laid back personality and always likes to make sure everyone is having a good time. His music is a reflection of his personality but also some of his emotions.</description>
+		  <socialmedia>@mvrcussterling</socialmedia>
+		  <music>https://soundcloud.com/marcussterlingofficial/here-we-come-prod-goody-beats </music>
+	   </artist>
 
+	   <artist>
+		  <id>2</id>
+		  <name>Tazzy</name>
+		  <age>19</age>
+		  <location>Indianapolis</location>
+		  <genre>hip-hop/rap</genre>
+		  <hometown>North Carolina</hometown>
+		  <description>Taylor, also known as Tazzy, or Taz Focal is an upcoming rapper and singer that discusses the reality of what the life of extremity brings to him.</description>
+		  <socialmedia>N/A</socialmedia>
+		  <music>https://www.youtube.com/watch?v=ow9pNWv0PHk</music>
+	   </artist>
+
+	   <artist>
+		  <id>3</id>
+		  <name>Xae</name>
+		  <age>17</age>
+		  <location>Indianapolis</location>
+		  <genre>hip-hop/rap</genre>
+		  <hometown>Indianapolis</hometown>
+		  <description>Very ambitious and former member of 2 Wavy, Xavier’s music and sound productoning skills will guide him to be very successful in his his music career, as he incorporates singing and rapping in his music.</description>
+		  <socialmedia>N/A</socialmedia>
+		  <music>https://www.youtube.com/watch?v=M4c32pDmRso</music>
+	   </artist>
+
+	   <artist>
+		  <id>4</id>
+		  <name>C.R.</name>
+		  <age>20</age>
+		  <location>Los Angeles</location>
+		  <genre>hip-hop/rap</genre>
+		  <hometown>Indianapolis</hometown>
+		  <description>C.R. is a guy who is known for being someone who has good vibes and likes to make music that speaks about his loyalty for friends and family.</description>
+		  <socialmedia>@tycuCR</socialmedia>
+		  <music>https://soundcloud.com/tycu7164/crslide-fbg-duck-remix </music>
+	   </artist>
+
+	   <artist>
+		  <id>5</id>
+		  <name>WTN E</name>
+		  <age>20</age>
+		  <location>Indianapolis</location>
+		  <genre>rap</genre>
+		  <hometown>Indianapolis</hometown>
+		  <description>Indianapolis, WTN E is a high energy guy. His music also reflects his personality as he makes a lot of music that can get you hyped up.</description>
+		  <socialmedia>@E_mannnnnnn</socialmedia>
+		  <music>https://soundcloud.com/101898/petco </music>
+	   </artist>
+
+	   <artist>
+		  <id>6</id>
+		  <name>317 Boys</name>
+		  <age>N/A</age>
+		  <location>Indianapolis</location>
+		  <genre>hip-hop/rap</genre>
+		  <hometown>Indianapolis</hometown>
+		  <description>317 Boys are upcoming rappers coming straight out their room, literally.</description>
+		  <socialmedia>N/A</socialmedia>
+		  <music>https://soundcloud.com/user-964906917-85982741/money-orders-lazerbeam-ft</music>
+	   </artist>
+	</ArtistsInfo>
+	
+	</xml>
 </body>
-
 </html>

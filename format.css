@@ -50,6 +50,16 @@ p{
 	font-size: 20px;
 }
 
+p1{
+	font: normal 1em Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+	color: black;
+	margin: 0;
+	text-align: left;
+	line-height: 1em;
+	letter-spacing:.07em;
+	font-size: 15px;
+}
+
 footer{
 	font: normal Arial, serif;
 	color: black;
@@ -105,17 +115,6 @@ footer{
 	top: 20px;
 	left: 5px;
 }
-/* sets formatting for iframe next to vertical oriented photos */
-.artistDescripVertical{
-	height: 225px;
-	width: 275px;
-}
-/* sets formatting for iframe next to horizontal oriented photos */
-.artistDescripHorizontal{
-	height: 100px;
-	width: 450px;
-}
-
 /* may or may not use */
 ArtistsInfo{
 	font: normal 2em Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;

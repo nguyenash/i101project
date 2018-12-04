@@ -10,6 +10,8 @@
       <genre>hip-hop</genre>
       <hometown>Indianapolis</hometown>
       <description>Marcus Sterling is someone with a laid back personality and always likes to make sure everyone is having a good time. His music is a reflection of his personality but also some of his emotions.</description>
+	  <socialmedia>@mvrcussterling</socialmedia>
+	  <music>https://soundcloud.com/marcussterlingofficial/here-we-come-prod-goody-beats </music>
    </artist>
 
    <artist>
@@ -19,17 +21,21 @@
       <location>Indianapolis</location>
       <genre>hip-hop/rap</genre>
       <hometown>North Carolina</hometown>
-      <description>N/A</description>
+      <description>Taylor, also known as Tazzy, or Taz Focal is an upcoming rapper and singer that discusses the reality of what the life of extremity brings to him.</description>
+	  <socialmedia>N/A</socialmedia>
+	  <music>https://www.youtube.com/watch?v=ow9pNWv0PHk</music>
    </artist>
 
    <artist>
 	  <id>3</id>
-      <name>XaeWay</name>
+      <name>Xae</name>
       <age>17</age>
       <location>Indianapolis</location>
       <genre>hip-hop/rap</genre>
       <hometown>Indianapolis</hometown>
-      <description>N/A</description>
+      <description>Very ambitious and former member of 2 Wavy, Xavier’s music and sound productoning skills will guide him to be very successful in his his music career, as he incorporates singing and rapping in his music.</description>
+	  <socialmedia>N/A</socialmedia>
+	  <music>https://www.youtube.com/watch?v=M4c32pDmRso</music>
    </artist>
 
    <artist>
@@ -40,6 +46,8 @@
       <genre>hip-hop/rap</genre>
       <hometown>Indianapolis</hometown>
       <description>C.R. is a guy who is known for being someone who has good vibes and likes to make music that speaks about his loyalty for friends and family.</description>
+	  <socialmedia>@tycuCR</socialmedia>
+	  <music>https://soundcloud.com/tycu7164/crslide-fbg-duck-remix </music>
    </artist>
 
    <artist>
@@ -50,6 +58,8 @@
       <genre>rap</genre>
       <hometown>Indianapolis</hometown>
       <description>Indianapolis, WTN E is a high energy guy. His music also reflects his personality as he makes a lot of music that can get you hyped up.</description>
+	  <socialmedia>@E_mannnnnnn</socialmedia>
+	  <music>https://soundcloud.com/101898/petco </music>
    </artist>
 
    <artist>
@@ -60,7 +70,7 @@
       <genre>hip-hop/rap</genre>
       <hometown>Indianapolis</hometown>
       <description>317 Boys are upcoming rappers coming straight out their room, literally.</description>
+	  <socialmedia>N/A</socialmedia>
+	  <music>https://soundcloud.com/user-964906917-85982741/money-orders-lazerbeam-ft</music>
    </artist>
-
-
 </ArtistsInfo>
